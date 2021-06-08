@@ -65,5 +65,7 @@ public class MyWorld extends World
         Platform platform15 = new Platform();
         addObject(platform15,1640,362);
         removeObject(platform12);
+        Mc mc = new Mc();
+        addObject(mc,35,666);
     }
 }
