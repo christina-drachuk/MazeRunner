@@ -67,5 +67,35 @@ public class MyWorld extends World
         removeObject(platform12);
         Mc mc = new Mc();
         addObject(mc,35,666);
+        removeObject(ground);
+        removeObject(ground2);
+        removeObject(ground3);
+        removeObject(ground4);
+        Platform platform16 = new Platform();
+        addObject(platform16,25,753);
+        platform16.setLocation(70,751);
+        Platform platform17 = new Platform();
+        addObject(platform17,70,751);
+        platform17.setLocation(115,757);
+        Platform platform18 = new Platform();
+        addObject(platform18,115,757);
+        platform17.setLocation(102,793);
+        Platform platform19 = new Platform();
+        addObject(platform19,102,793);
+        platform16.setLocation(61,794);
+        Platform platform20 = new Platform();
+        addObject(platform20,61,794);
+        platform16.setLocation(12,779);
+        Platform platform21 = new Platform();
+        addObject(platform21,12,779);
+        platform16.setLocation(44,756);
+        Platform platform22 = new Platform();
+        addObject(platform22,44,756);
+        platform16.setLocation(12,757);
+        Platform platform23 = new Platform();
+        addObject(platform23,12,757);
+        platform16.setLocation(26,783);
+        Platform platform24 = new Platform();
+        addObject(platform24,26,783);
     }
 }
