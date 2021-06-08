@@ -11,12 +11,20 @@ public class Mc extends Actor
     private int speed = 2;
     private int vSpeed = 0;
     private int acceleration = 2;  
-    private int jumpStrength = -25; 
+    private int jumpStrength = -25;
+    
+    private GreenfootImage img1 = new GreenfootImage("MC1.png");
+    private GreenfootImage img2 = new GreenfootImage("MC2.png");
+    private GreenfootImage img3 = new GreenfootImage("MC3.png");
+    private GreenfootImage img4 = new GreenfootImage("MC5.png");
+    
+    private int frame = 1;
     public void act() 
     {
         checkKeys();
         checkFall();
         jump();
+        
     }  
 
     public void checkKeys()
@@ -28,6 +36,7 @@ public class Mc extends Actor
         if(Greenfoot.isKeyDown("right"))
         {
             move(5);
+            moveRightSwitch();
         }
         if(Greenfoot.isKeyDown("up")) 
         {
@@ -74,5 +83,32 @@ public class Mc extends Actor
         {  
             fall();  
         }  
+    }
+    
+    public void moveRightSwitch()
+    {
+        if (frame == 1 && onPlatform())
+        {
+           setImage(img1);
+        }
+        
+        else if (frame == 2 && onPlatform())
+        {
+           setImage(img2); 
+        }
+        
+        else if (frame == 3 && onPlatform())
+        {
+           setImage(img3); 
+        }
+        
+        else if (frame == 4 && onPlatform())
+        {
+           setImage(img4);
+           frame = 1;
+           return;
+        }
+        
+        frame++;
     }
 }
