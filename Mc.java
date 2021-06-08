@@ -11,22 +11,37 @@ public class Mc extends Actor
     private int speed = 2;
     private int vSpeed = 0;
     private int acceleration = 2;  
-    private int jumpStrength = -25; 
+    private int jumpStrength = -25;
+    
+    private GreenfootImage img1 = new GreenfootImage("MC1.png");
+    private GreenfootImage img2 = new GreenfootImage("MC2.png");
+    private GreenfootImage img3 = new GreenfootImage("MC3.png");
+    private GreenfootImage img4 = new GreenfootImage("MC5.png");
+    
+    private GreenfootImage img1L = new GreenfootImage("MC1left.png");
+    private GreenfootImage img2L = new GreenfootImage("MC2left.png");
+    private GreenfootImage img3L = new GreenfootImage("MC3left.png");
+    private GreenfootImage img4L = new GreenfootImage("MC5left.png");
+    
+    private int frame = 1;
     public void act() 
     {
         checkKeys();
         checkFall();
         jump();
+        
     }  
 
     public void checkKeys()
     {
         if( Greenfoot.isKeyDown("left"))
         {
+            moveLeftSwitch();
             move(-5);
         }
         if(Greenfoot.isKeyDown("right"))
         {
+            moveRightSwitch();
             move(5);
         }
         if(Greenfoot.isKeyDown("up")) 
@@ -68,5 +83,59 @@ public class Mc extends Actor
         {  
             fall();  
         }  
+    }
+    
+    public void moveRightSwitch()
+    {
+        if (frame == 1)
+        {
+           setImage(img1);
+        }
+        
+        else if (frame == 2)
+        {
+           setImage(img2); 
+        }
+        
+        else if (frame == 3)
+        {
+           setImage(img3); 
+        }
+        
+        else if (frame == 4)
+        {
+           setImage(img4);
+           frame = 1;
+           return;
+        }
+        
+        frame++;
+    }
+    
+    public void moveLeftSwitch()
+    {
+        if (frame == 1)
+        {
+           setImage(img1L);
+        }
+        
+        else if (frame == 2)
+        {
+           setImage(img2L); 
+        }
+        
+        else if (frame == 3)
+        {
+           setImage(img3L); 
+        }
+        
+        else if (frame == 4)
+        {
+           setImage(img4L);
+           frame = 1;
+           return;
+        }
+        
+        frame++;
     }
 }
