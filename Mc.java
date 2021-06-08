@@ -54,13 +54,7 @@ public class Mc extends Actor
 
     public boolean onPlatform()  
     {  
-        Actor under = getOneObjectAtOffset (0, getImage().getHeight()/2, Platform.class);  
-        return under != null;  
-    }  
-    
-    public boolean onGround()  
-    {  
-       Actor under = getOneObjectAtOffset (0, getImage().getHeight()/2, ground.class);  
+        Actor under = getOneObjectAtOffset (0, getImage().getHeight()/3, Platform.class);  
         return under != null;  
     }  
 
