@@ -18,6 +18,11 @@ public class Mc extends Actor
     private GreenfootImage img3 = new GreenfootImage("MC3.png");
     private GreenfootImage img4 = new GreenfootImage("MC5.png");
     
+    private GreenfootImage img1L = new GreenfootImage("MC1left.png");
+    private GreenfootImage img2L = new GreenfootImage("MC2left.png");
+    private GreenfootImage img3L = new GreenfootImage("MC3left.png");
+    private GreenfootImage img4L = new GreenfootImage("MC5left.png");
+    
     private int frame = 1;
     public void act() 
     {
@@ -31,12 +36,13 @@ public class Mc extends Actor
     {
         if( Greenfoot.isKeyDown("left"))
         {
+            moveLeftSwitch();
             move(-5);
         }
         if(Greenfoot.isKeyDown("right"))
         {
-            move(5);
             moveRightSwitch();
+            move(5);
         }
         if(Greenfoot.isKeyDown("up")) 
         {
@@ -87,24 +93,51 @@ public class Mc extends Actor
     
     public void moveRightSwitch()
     {
-        if (frame == 1 && onPlatform())
+        if (frame == 1)
         {
            setImage(img1);
         }
         
-        else if (frame == 2 && onPlatform())
+        else if (frame == 2)
         {
            setImage(img2); 
         }
         
-        else if (frame == 3 && onPlatform())
+        else if (frame == 3)
         {
            setImage(img3); 
         }
         
-        else if (frame == 4 && onPlatform())
+        else if (frame == 4)
         {
            setImage(img4);
+           frame = 1;
+           return;
+        }
+        
+        frame++;
+    }
+    
+    public void moveLeftSwitch()
+    {
+        if (frame == 1)
+        {
+           setImage(img1L);
+        }
+        
+        else if (frame == 2)
+        {
+           setImage(img2L); 
+        }
+        
+        else if (frame == 3)
+        {
+           setImage(img3L); 
+        }
+        
+        else if (frame == 4)
+        {
+           setImage(img4L);
            frame = 1;
            return;
         }
