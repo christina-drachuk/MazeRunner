@@ -12,6 +12,7 @@ public class Mc extends Actor
     private int vSpeed = 0;
     private int acceleration = 2;  
     private int jumpStrength = -25;
+    private int delay = 0;
     
     private GreenfootImage img1 = new GreenfootImage("MC1.png");
     private GreenfootImage img2 = new GreenfootImage("MC2.png");
@@ -29,7 +30,8 @@ public class Mc extends Actor
         checkKeys();
         checkFall();
         jump();
-        
+        lasergun();
+        delay++; 
     }  
 
     public void checkKeys()
@@ -69,7 +71,7 @@ public class Mc extends Actor
 
     public boolean onPlatform()  
     {  
-        Actor under = getOneObjectAtOffset (0, getImage().getHeight()/3, Platform.class);  
+        Actor under = getOneObjectAtOffset (0, getImage().getHeight()/4, Platform.class);  
         return under != null;  
     }  
 
@@ -137,5 +139,23 @@ public class Mc extends Actor
         }
         
         frame++;
+    }
+    
+    public void lasergun(){
+        if (isTouching(laser.class)){
+            removeTouching(laser.class);
+            Greenfoot.playSound("up.wav");
+            shoot(); 
+        }
+    }
+    
+    public void shoot(){
+        if( Greenfoot.isKeyDown("f"))
+        {
+            if (delay >= 75){
+            getWorld().addObject(new projectile(), getX(), getY());
+            delay = 0; 
+            }
+        }
     }
 }
