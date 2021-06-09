@@ -33,8 +33,22 @@ public class Mc extends Actor
         jump();
         lasergun();
         delay++; 
+<<<<<<< Updated upstream
         shield(); 
+=======
+        life();
+>>>>>>> Stashed changes
     }  
+    
+    public void life()
+    {
+        int y = getY();
+        if (y > 710)
+        {
+            setLocation(35, 666);
+            ((MyWorld)getWorld()).lostLife();
+        }
+    }
 
     public void checkKeys()
     {

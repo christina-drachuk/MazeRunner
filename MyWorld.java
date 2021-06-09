@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends GeneralWorld
 {
-
+    int lives = 3;
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -17,6 +17,11 @@ public class MyWorld extends GeneralWorld
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         prepare();
+        drawLives();
+    }
+    
+    public void act()
+    {
     }
 
     /**
@@ -88,5 +93,27 @@ public class MyWorld extends GeneralWorld
         addObject(platform5,753,572);
         Platform platform6 = new Platform();
         addObject(platform6,692,573);
+    }
+    
+    public void lostLife()
+    {
+        lives--;
+        drawLives();
+    }
+    
+    public void lifeGain()
+    {
+        lives++;
+        drawLives();
+    }
+    
+    private void drawLives()
+    {
+        removeObjects(getObjects(Heart.class));
+        for (int i = 0; i != lives; i++)
+        {
+            Heart heart = new Heart();
+            addObject(heart, 20 + 20 * i, 20);
+        }
     }
 }
