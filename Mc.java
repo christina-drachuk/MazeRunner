@@ -162,4 +162,10 @@ public class Mc extends Actor
             }
         }
     }
+    
+    public void shield(){
+        if (isTouching(shield.class)){
+            Greenfoot.playSound("up.wav");
+        }
+    }
 }
