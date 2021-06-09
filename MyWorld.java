@@ -25,14 +25,6 @@ public class MyWorld extends GeneralWorld
      */
     private void prepare()
     {
-        ground ground = new ground();
-        addObject(ground,255,749);
-        ground ground2 = new ground();
-        addObject(ground2,767,743);
-        ground ground3 = new ground();
-        addObject(ground3,1255,746);
-        ground ground4 = new ground();
-        addObject(ground4,1639,746);
         Platform platform = new Platform();
         addObject(platform,259,645);
         Platform platform2 = new Platform();
@@ -41,10 +33,6 @@ public class MyWorld extends GeneralWorld
         addObject(platform3,563,571);
         Platform platform4 = new Platform();
         addObject(platform4,631,572);
-        Platform platform5 = new Platform();
-        addObject(platform5,687,559);
-        Platform platform6 = new Platform();
-        addObject(platform6,759,558);
         Platform platform7 = new Platform();
         addObject(platform7,821,573);
         Platform platform8 = new Platform();
@@ -66,10 +54,6 @@ public class MyWorld extends GeneralWorld
         removeObject(platform12);
         Mc mc = new Mc();
         addObject(mc,35,666);
-        removeObject(ground);
-        removeObject(ground2);
-        removeObject(ground3);
-        removeObject(ground4);
         Platform platform16 = new Platform();
         addObject(platform16,25,753);
         platform16.setLocation(70,751);
@@ -96,5 +80,13 @@ public class MyWorld extends GeneralWorld
         platform16.setLocation(26,783);
         Platform platform24 = new Platform();
         addObject(platform24,26,783);
+        shield shield = new shield();
+        addObject(shield,1079,507);
+        laser laser = new laser();
+        addObject(laser,418,583);
+        Platform platform5 = new Platform();
+        addObject(platform5,753,572);
+        Platform platform6 = new Platform();
+        addObject(platform6,692,573);
     }
 }
