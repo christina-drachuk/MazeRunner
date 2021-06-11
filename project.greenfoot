@@ -1,6 +1,9 @@
 #Greenfoot project file
+<<<<<<< HEAD
 class.GeneralWorld.image=Level1Background.png
 class.Heart.image=pixel-heart-2779422_1280.png
+=======
+>>>>>>> cc79546de8d8d375e277b7ce739c537b66b50756
 class.Mc.image=MC1.png
 class.MyWorld.image=Level1Background.png
 class.Platform.image=platform.png

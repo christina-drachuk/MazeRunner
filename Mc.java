@@ -13,7 +13,7 @@ public class Mc extends Actor
     private int acceleration = 2;  
     private int jumpStrength = -25;
     private int delay = 0;
-    private boolean hasGun = false; 
+    private boolean hasGun = false;
     
     private GreenfootImage img1 = new GreenfootImage("MC1.png");
     private GreenfootImage img2 = new GreenfootImage("MC2.png");
@@ -171,7 +171,7 @@ public class Mc extends Actor
     public void shoot(){
         if( Greenfoot.isKeyDown("f"))
         {
-            if (delay >= 75){
+            if (delay >= 55){
             getWorld().addObject(new projectile(), getX(), getY());
             delay = 0; 
             }
