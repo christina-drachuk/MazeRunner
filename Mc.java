@@ -33,6 +33,7 @@ public class Mc extends Actor
         jump();
         lasergun();
         delay++; 
+        shield(); 
     }  
 
     public void checkKeys()
@@ -165,6 +166,7 @@ public class Mc extends Actor
     
     public void shield(){
         if (isTouching(shield.class)){
+            removeTouching(shield.class);
             Greenfoot.playSound("up.wav");
         }
     }
