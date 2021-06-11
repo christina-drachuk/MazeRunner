@@ -8,7 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class GeneralWorld extends World
 {
-
+    private Mc mc;
+    //MyWorld myWorld = getWorld();
     /**
      * Constructor for objects of class GeneralWorld.
      * 
@@ -16,6 +17,12 @@ public class GeneralWorld extends World
     public GeneralWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(1700, 800, 1);
+        super(1700, 800, 1, false);
+        this.mc = new Mc();
+    }
+    
+    public Mc getMc()
+    {
+        return mc;
     }
 }

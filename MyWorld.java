@@ -16,7 +16,16 @@ public class MyWorld extends GeneralWorld
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        super();
+        addObject(getMc(),35,666);
         prepare();
+    }
+    
+    public void act()
+    {
+        
+        if (getMc().getX() > getWidth())
+            Greenfoot.setWorld(new Level2());
     }
 
     /**
@@ -52,8 +61,7 @@ public class MyWorld extends GeneralWorld
         Platform platform15 = new Platform();
         addObject(platform15,1640,362);
         removeObject(platform12);
-        Mc mc = new Mc();
-        addObject(mc,35,666);
+        
         Platform platform16 = new Platform();
         addObject(platform16,25,753);
         platform16.setLocation(70,751);
