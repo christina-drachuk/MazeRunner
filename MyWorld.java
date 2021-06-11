@@ -8,7 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends GeneralWorld
 {
-    int lives = 3;
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -99,6 +98,13 @@ public class MyWorld extends GeneralWorld
     {
         lives--;
         drawLives();
+        if (lives == 0)
+        {
+            GreenfootImage image = new GreenfootImage("GAME OVER", 120, Color.RED, null);
+            getBackground().drawImage(image, 850-image.getWidth()/2, 400-image.getHeight()/2);
+            removeObjects(getObjects(Mc.class));
+            Greenfoot.stop();
+        }
     }
     
     public void lifeGain()
@@ -113,7 +119,7 @@ public class MyWorld extends GeneralWorld
         for (int i = 0; i != lives; i++)
         {
             Heart heart = new Heart();
-            addObject(heart, 20 + 20 * i, 20);
+            addObject(heart, 20 + 25 * i, 20);
         }
     }
 }

@@ -33,11 +33,8 @@ public class Mc extends Actor
         jump();
         lasergun();
         delay++; 
-<<<<<<< Updated upstream
         shield(); 
-=======
         life();
->>>>>>> Stashed changes
     }  
     
     public void life()
@@ -182,6 +179,7 @@ public class Mc extends Actor
         if (isTouching(shield.class)){
             removeTouching(shield.class);
             Greenfoot.playSound("up.wav");
+            ((MyWorld)getWorld()).lifeGain();
         }
     }
 }
