@@ -79,5 +79,26 @@ public class Level2 extends GeneralWorld
         addObject(lvl2Pf26,1647,391);
         Lvl2Pf lvl2Pf27 = new Lvl2Pf();
         addObject(lvl2Pf27,1681,368);
+        Lvl2Pf lvl2Pf28 = new Lvl2Pf();
+        addObject(lvl2Pf28,745,446);
+        Lvl2Pf lvl2Pf29 = new Lvl2Pf();
+        addObject(lvl2Pf29,607,443);
+        Lvl2Pf lvl2Pf30 = new Lvl2Pf();
+        addObject(lvl2Pf30,489,441);
+        Lvl2Pf lvl2Pf31 = new Lvl2Pf();
+        addObject(lvl2Pf31,411,383);
+        Lvl2Pf lvl2Pf32 = new Lvl2Pf();
+        addObject(lvl2Pf32,362,381);
+        addObject(lvl2Pf32,369,383);
+        Lvl2Pf lvl2Pf33 = new Lvl2Pf();
+        addObject(lvl2Pf33,321,382);
+        Lvl2Pf lvl2Pf34 = new Lvl2Pf();
+        addObject(lvl2Pf34,253,470);
+        Lvl2Pf lvl2Pf35 = new Lvl2Pf();
+        addObject(lvl2Pf35,176,429);
+        Lvl2Pf lvl2Pf36 = new Lvl2Pf();
+        addObject(lvl2Pf36,104,375);
+        Lvl2Pf lvl2Pf37 = new Lvl2Pf();
+        addObject(lvl2Pf37,18,320);
     }
 }
