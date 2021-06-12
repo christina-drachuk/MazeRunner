@@ -16,6 +16,7 @@ public class Level2 extends GeneralWorld
     public Level2()
     {
         prepare();
+        
     }
 
     /**

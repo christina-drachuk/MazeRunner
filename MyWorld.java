@@ -24,7 +24,7 @@ public class MyWorld extends GeneralWorld
     public void act()
     {
         
-        if (getMc().getX() > getWidth())
+        if (getMc().getX() >= getWidth())
             Greenfoot.setWorld(new Level2());
     }
 
