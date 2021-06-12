@@ -23,10 +23,6 @@ public class MyWorld extends GeneralWorld
     
     public void act()
     {
-    }
-    
-    public void act()
-    {
         
         if (getMc().getX() > getWidth())
             Greenfoot.setWorld(new Level2());
@@ -102,7 +98,8 @@ public class MyWorld extends GeneralWorld
         addObject(platform6,692,573);
     }
     
-    public void lostLife()
+        
+        public void lostLife()
     {
         lives--;
         drawLives();
@@ -121,7 +118,7 @@ public class MyWorld extends GeneralWorld
         drawLives();
     }
     
-    private void drawLives()
+    public void drawLives()
     {
         removeObjects(getObjects(Heart.class));
         for (int i = 0; i != lives; i++)
