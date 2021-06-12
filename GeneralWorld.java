@@ -10,6 +10,7 @@ public class GeneralWorld extends World
 {
     private Mc mc;
     //MyWorld myWorld = getWorld();
+    public static int lives = 3;
     /**
      * Constructor for objects of class GeneralWorld.
      * 
