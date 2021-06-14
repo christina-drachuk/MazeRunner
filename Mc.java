@@ -36,6 +36,7 @@ public class Mc extends Actor
         delay++; 
         shield(); 
         life();
+        die(); 
     }  
     
     public void life()
@@ -197,6 +198,13 @@ public class Mc extends Actor
             removeTouching(shield.class);
             Greenfoot.playSound("up.wav");
             ((MyWorld)getWorld()).lifeGain();
+        }
+    }
+    
+    public void die(){
+        if(isTouching(Enemy.class)){
+            setLocation(35, 666);
+            ((MyWorld)getWorld()).lostLife();;
         }
     }
 }

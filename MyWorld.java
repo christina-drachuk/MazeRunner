@@ -61,7 +61,7 @@ public class MyWorld extends GeneralWorld
         Platform platform15 = new Platform();
         addObject(platform15,1640,362);
         removeObject(platform12);
-        
+
         Platform platform16 = new Platform();
         addObject(platform16,25,753);
         platform16.setLocation(70,751);
@@ -96,6 +96,8 @@ public class MyWorld extends GeneralWorld
         addObject(platform5,753,572);
         Platform platform6 = new Platform();
         addObject(platform6,692,573);
+        Enemy enemy = new Enemy();
+        addObject(enemy,733,511);
     }
     
         
