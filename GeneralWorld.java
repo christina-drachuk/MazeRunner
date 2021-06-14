@@ -10,7 +10,7 @@ public class GeneralWorld extends World
 {
     private Mc mc;
     //MyWorld myWorld = getWorld();
-    public static int lives = 3;
+    public static int lives;
     /**
      * Constructor for objects of class GeneralWorld.
      * 
@@ -20,6 +20,7 @@ public class GeneralWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1700, 800, 1, false);
         this.mc = new Mc();
+        lives = 3;
     }
     
     public Mc getMc()
@@ -27,7 +28,7 @@ public class GeneralWorld extends World
         return mc;
     }
 
-            public void lostLife()
+    public void lostLife()
     {
         lives--;
         drawLives();
