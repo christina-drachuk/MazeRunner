@@ -16,7 +16,8 @@ public class Level2 extends GeneralWorld
     public Level2()
     {
         prepare();
-        
+        if (lives != 0)
+            drawLives();
     }
 
     /**

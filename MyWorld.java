@@ -18,7 +18,8 @@ public class MyWorld extends GeneralWorld
         super();
         addObject(getMc(),35,666);
         prepare();
-        drawLives();
+        if (lives != 0)
+            drawLives();
     }
     
     public void act()
