@@ -100,5 +100,7 @@ public class Level2 extends GeneralWorld
         addObject(lvl2Pf36,104,375);
         Lvl2Pf lvl2Pf37 = new Lvl2Pf();
         addObject(lvl2Pf37,18,320);
+        Mc mc = new Mc();
+        addObject(mc,32,677);
     }
 }

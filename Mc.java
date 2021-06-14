@@ -42,10 +42,10 @@ public class Mc extends Actor
     public void life()
     {
         int y = getY();
-        if (y > 710)
+        if (y > 800)
         {
             setLocation(35, 666);
-            ((MyWorld)getWorld()).lostLife();
+            ((GeneralWorld)getWorld()).lostLife();
         }
     }
 
@@ -197,14 +197,14 @@ public class Mc extends Actor
         if (isTouching(shield.class)){
             removeTouching(shield.class);
             Greenfoot.playSound("up.wav");
-            ((MyWorld)getWorld()).lifeGain();
+            ((GeneralWorld)getWorld()).lifeGain();
         }
     }
     
     public void die(){
         if(isTouching(Enemy.class)){
             setLocation(35, 666);
-            ((MyWorld)getWorld()).lostLife();;
+            ((GeneralWorld)getWorld()).lostLife();;
         }
     }
 }

@@ -27,4 +27,32 @@ public class GeneralWorld extends World
         return mc;
     }
 
+            public void lostLife()
+    {
+        lives--;
+        drawLives();
+        if (lives == 0)
+        {
+            GreenfootImage image = new GreenfootImage("GAME OVER", 120, Color.RED, null);
+            getBackground().drawImage(image, 850-image.getWidth()/2, 400-image.getHeight()/2);
+            //removeObjects(getObjects(Mc.class));
+            Greenfoot.stop();
+        }
+    }
+    
+    public void lifeGain()
+    {
+        lives++;
+        drawLives();
+    }
+    
+    public void drawLives()
+    {
+        removeObjects(getObjects(Heart.class));
+        for (int i = 0; i != lives; i++)
+        {
+            Heart heart = new Heart();
+            addObject(heart, 20 + 25 * i, 20);
+        }
+    }
 }
