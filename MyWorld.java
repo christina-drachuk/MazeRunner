@@ -23,21 +23,15 @@ public class MyWorld extends GeneralWorld
             drawLives();
         backgroundMusicOne.playLoop();
         backgroundMusicOne.setVolume(40);
-        if (getMc().getX() >= getWidth())
-        {
-            backgroundMusicOne.pause();
-            Greenfoot.setWorld(new Level2());
-            
-        }
-
     }
 
     
     public void act()
     {
         
-        if (getMc().getX() >= getWidth())
-            Greenfoot.setWorld(new Level2());
+        if (getMc().getX() >= getWidth()) {
+            backgroundMusicOne.pause();
+            Greenfoot.setWorld(new Level2());}
     }
 
     /**
