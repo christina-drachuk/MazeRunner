@@ -115,5 +115,18 @@ public class Level2 extends GeneralWorld
         mc.setLocation(8,702);
         laser laser = new laser();
         addObject(laser,8,702);
+        shield shield = new shield();
+        addObject(shield,1168,477);
+        shield shield2 = new shield();
+        addObject(shield2,106,332);
+        laser2 laser2 = new laser2();
+        addObject(laser2,40,284);
+        laser2.setLocation(25,285);
+        shield shield3 = new shield();
+        addObject(shield3,25,285);
+        laser2.setLocation(123,279);
+        removeObject(shield3);
+        laser2.setLocation(31,302);
+        removeObject(shield2);
     }
 }
