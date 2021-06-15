@@ -16,6 +16,7 @@ public class Level3 extends GeneralWorld
     public Level3()
     {
         prepare();
+        addObject(getMc(),13,695);
     }
 
     /**

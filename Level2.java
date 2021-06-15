@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Level2 extends GeneralWorld
 {
-
+    Mc mc = new Mc();
     /**
      * Constructor for objects of class Level2.
      * 
@@ -19,11 +19,17 @@ public class Level2 extends GeneralWorld
         prepare();
         backgroundMusicTwo.playLoop();
         backgroundMusicTwo.setVolume(30);
-
+        addObject(getMc(),8,702);
         if (lives != 0)
             drawLives();
     }
 
+    public void act()
+    {
+        if (getMc().getX() >= getWidth()) {
+            backgroundMusicTwo.pause();
+            Greenfoot.setWorld(new Level3());}
+    }
 
     /**
      * Prepare the world for the start of the program.
@@ -106,8 +112,7 @@ public class Level2 extends GeneralWorld
         addObject(lvl2Pf36,104,375);
         Lvl2Pf lvl2Pf37 = new Lvl2Pf();
         addObject(lvl2Pf37,18,320);
-        Mc mc = new Mc();
-        addObject(mc,32,677);
+
         Lvl2Emy lvl2Emy = new Lvl2Emy();
         addObject(lvl2Emy,364,333);
         Lvl2Emy lvl2Emy2 = new Lvl2Emy();
@@ -117,7 +122,7 @@ public class Level2 extends GeneralWorld
         removeObject(lvl2Pf20);
         addObject(lvl2Pf20,1309,493);
         lvl2Emy2.setLocation(1354,445);
-        mc.setLocation(8,702);
+        
         laser laser = new laser();
         addObject(laser,8,702);
         shield shield = new shield();
