@@ -109,13 +109,32 @@ dependency8.type=UsesDependency
 dependency9.from=Level2
 dependency9.to=laser2
 dependency9.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.height=728
 editor.fx.0.width=800
 editor.fx.0.x=320
 editor.fx.0.y=54
 height=814
 package.numDependencies=32
+=======
+<<<<<<< HEAD
+editor.fx.0.height=737
+editor.fx.0.width=808
+editor.fx.0.x=360
+editor.fx.0.y=28
+height=838
+package.numDependencies=26
+package.numTargets=15
+=======
+editor.fx.0.height=739
+editor.fx.0.width=816
+editor.fx.0.x=85
+editor.fx.0.y=129
+height=985
+package.numDependencies=31
+>>>>>>> 0e56c3dae738fb5a5572d8b2f8157af3dd9e2ed2
 package.numTargets=16
+>>>>>>> e637bb466b3ff48ee0bb991efee74850c45a4483
 project.charset=windows-1252
 publish.hasSource=false
 publish.locked=true
@@ -130,7 +149,11 @@ readme.width=47
 readme.x=10
 readme.y=10
 shm.size=60000000
+<<<<<<< HEAD
+simulation.speed=50
+=======
 simulation.speed=45
+>>>>>>> e637bb466b3ff48ee0bb991efee74850c45a4483
 target1.height=50
 target1.name=Heart
 target1.showInterface=false
@@ -244,7 +267,14 @@ target9.width=80
 target9.x=0
 target9.y=0
 version=3.0.0
+<<<<<<< HEAD
 width=1478
 world.lastInstantiated=Level3
 xPosition=112
 yPosition=44
+=======
+width=1550
+world.lastInstantiated=MyWorld
+xPosition=19
+yPosition=11
+>>>>>>> 0e56c3dae738fb5a5572d8b2f8157af3dd9e2ed2
