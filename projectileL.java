@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class projectile extends Actor
+public class projectileL extends Actor
 {
     /**
      * Act - do whatever the projectile wants to do. This method is called whenever
@@ -14,7 +14,7 @@ public class projectile extends Actor
      */
     public void act() 
     {
-        setLocation(getX()+15, (getY()));
+        setLocation(getX()-15, (getY()));
         rightScreen();// Add your action code here.
     } 
     

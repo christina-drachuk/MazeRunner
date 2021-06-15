@@ -14,6 +14,7 @@ public class Mc extends Actor
     private int jumpStrength = -25;
     private int delay = 0;
     private boolean hasGun = false;
+    private int face = 1; 
     
     private GreenfootImage img1 = new GreenfootImage("MC1.png");
     private GreenfootImage img2 = new GreenfootImage("MC2.png");
@@ -55,11 +56,13 @@ public class Mc extends Actor
         {
             moveLeftSwitch();
             move(-5);
+            face = 2;
         }
         if(Greenfoot.isKeyDown("right"))
         {
             moveRightSwitch();
             move(5);
+            face = 1; 
         }
         if(Greenfoot.isKeyDown("up")) 
         {
@@ -70,7 +73,7 @@ public class Mc extends Actor
     
     public void jump()  
     {  
-        if (Greenfoot.isKeyDown("space") && onPlatform())
+        if (Greenfoot.isKeyDown("up") && onPlatform())
 
         {  
             vSpeed = jumpStrength;  
@@ -80,7 +83,7 @@ public class Mc extends Actor
     
     public void jump2()  
     {  
-        if (Greenfoot.isKeyDown("space") && onPlatform2())
+        if (Greenfoot.isKeyDown("up") && onPlatform2())
 
         {  
             vSpeed = jumpStrength;  
@@ -187,8 +190,14 @@ public class Mc extends Actor
         if( Greenfoot.isKeyDown("f"))
         {
             if (delay >= 55){
-            getWorld().addObject(new projectile(), getX(), getY());
-            delay = 0; 
+                if(face == 1){
+                    getWorld().addObject(new projectile(), getX(), getY());
+                    delay = 0; 
+                }
+                if(face == 2){
+                    getWorld().addObject(new projectileL(), getX(), getY());
+                    delay = 0; 
+                }
             }
         }
     }
@@ -202,7 +211,7 @@ public class Mc extends Actor
     }
     
     public void die(){
-        if(isTouching(Enemy.class)){
+        if(isTouching(Enemy.class) || (isTouching(Lvl2Emy.class))){
             setLocation(35, 666);
             ((GeneralWorld)getWorld()).lostLife();;
         }

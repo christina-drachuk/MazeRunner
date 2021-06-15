@@ -103,5 +103,17 @@ public class Level2 extends GeneralWorld
         addObject(lvl2Pf37,18,320);
         Mc mc = new Mc();
         addObject(mc,32,677);
+        Lvl2Emy lvl2Emy = new Lvl2Emy();
+        addObject(lvl2Emy,364,333);
+        Lvl2Emy lvl2Emy2 = new Lvl2Emy();
+        addObject(lvl2Emy2,1381,447);
+        Lvl2Emy lvl2Emy3 = new Lvl2Emy();
+        addObject(lvl2Emy3,1050,454);
+        removeObject(lvl2Pf20);
+        addObject(lvl2Pf20,1309,493);
+        lvl2Emy2.setLocation(1354,445);
+        mc.setLocation(8,702);
+        laser laser = new laser();
+        addObject(laser,8,702);
     }
 }

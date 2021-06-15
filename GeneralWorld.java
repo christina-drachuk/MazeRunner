@@ -27,7 +27,7 @@ public class GeneralWorld extends World
         return mc;
     }
 
-            public void lostLife()
+        public void lostLife()
     {
         lives--;
         drawLives();
