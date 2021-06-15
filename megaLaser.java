@@ -15,7 +15,7 @@ public class megaLaser extends Actor
     private int timer = 0; 
     public void act() 
     {
-        setLocation(getX()+15, (getY()));
+        setLocation(getX()+30, (getY()));
         rightScreen();
         timer++; // Add your action code here.
     } 
