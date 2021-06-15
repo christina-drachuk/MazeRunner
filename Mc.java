@@ -199,6 +199,7 @@ public class Mc extends Actor
         if( Greenfoot.isKeyDown("f"))
         {
             if (delay >= reloadTime){
+                Greenfoot.playSound("Shots.mp3");
                 if(face == 1){
                     getWorld().addObject(new projectile(), getX(), getY());
                     delay = 0; 
