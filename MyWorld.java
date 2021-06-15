@@ -12,6 +12,7 @@ public class MyWorld extends GeneralWorld
      * Constructor for objects of class MyWorld.
      * 
      */
+    GreenfootSound backgroundMusicOne = new GreenfootSound("bensound-thelounge.mp3");
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -20,7 +21,16 @@ public class MyWorld extends GeneralWorld
         prepare();
         if (lives != 0)
             drawLives();
+        backgroundMusicOne.playLoop();
+        backgroundMusicOne.setVolume(40);
+        if (getMc().getX() >= getWidth())
+        {
+            Greenfoot.setWorld(new Level2());
+            backgroundMusicOne.pause();
+        }
+
     }
+
     
     public void act()
     {

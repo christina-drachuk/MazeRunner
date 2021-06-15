@@ -13,12 +13,17 @@ public class Level2 extends GeneralWorld
      * Constructor for objects of class Level2.
      * 
      */
+    GreenfootSound backgroundMusicTwo = new GreenfootSound("bensound-dance.mp3");
     public Level2()
     {
         prepare();
+        backgroundMusicTwo.playLoop();
+        backgroundMusicTwo.setVolume(30);
+
         if (lives != 0)
             drawLives();
     }
+
 
     /**
      * Prepare the world for the start of the program.
