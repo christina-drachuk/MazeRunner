@@ -89,7 +89,7 @@ public class Lvl3Emy extends Actor
     }
     
     public void die(){
-        if(isTouching(projectile.class) || isTouching(projectileL.class)){
+        if(isTouching(projectile.class) || isTouching(projectileL.class) || isTouching(megaLaser.class)){
             removeTouching(projectile.class);
             removeTouching(projectileL.class);
             getWorld().removeObject(this);
