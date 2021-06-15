@@ -238,7 +238,7 @@ public class Mc extends Actor
     }
     
     public void die(){
-        if(isTouching(Enemy.class) || (isTouching(Lvl2Emy.class))){
+        if(isTouching(Enemy.class) || (isTouching(Lvl2Emy.class)) || (isTouching(Lvl3Emy.class))){
             setLocation(35, 666);
             ((GeneralWorld)getWorld()).lostLife();;
         }

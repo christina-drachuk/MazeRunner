@@ -122,7 +122,7 @@ public class Level2 extends GeneralWorld
         removeObject(lvl2Pf20);
         addObject(lvl2Pf20,1309,493);
         lvl2Emy2.setLocation(1354,445);
-        
+
         laser laser = new laser();
         addObject(laser,8,702);
         shield shield = new shield();
@@ -138,5 +138,7 @@ public class Level2 extends GeneralWorld
         removeObject(shield3);
         laser2.setLocation(31,302);
         removeObject(shield2);
+        shield shield4 = new shield();
+        addObject(shield4,28,698);
     }
 }

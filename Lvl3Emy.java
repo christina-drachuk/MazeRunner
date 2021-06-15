@@ -19,7 +19,7 @@ public class Lvl3Emy extends Actor
     private int moveNegX = 1; 
     private boolean side = false; 
     
-    public void act() 
+    public void act()
     {
         movement();
         die();
