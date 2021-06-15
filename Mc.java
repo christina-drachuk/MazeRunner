@@ -207,6 +207,20 @@ public class Mc extends Actor
             Greenfoot.playSound("up.wav");
         }
         
+        if (isTouching(laser3.class)){
+            hasGun = true;
+            reloadTime = 25;
+            removeTouching(laser3.class);
+            Greenfoot.playSound("up.wav");
+        }
+        
+        if (isTouching(laser4.class)){
+            hasGun = true;
+            reloadTime = 15;
+            removeTouching(laser4.class);
+            Greenfoot.playSound("up.wav");
+        }
+        
         if (hasGun){
             shoot(); 
         }
