@@ -25,8 +25,9 @@ public class MyWorld extends GeneralWorld
         backgroundMusicOne.setVolume(40);
         if (getMc().getX() >= getWidth())
         {
-            Greenfoot.setWorld(new Level2());
             backgroundMusicOne.pause();
+            Greenfoot.setWorld(new Level2());
+            
         }
 
     }

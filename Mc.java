@@ -34,6 +34,7 @@ public class Mc extends Actor
         checkFall();
         jump();
         jump2();
+        jump3();
         lasergun();
         delay++; 
         shield(); 
@@ -92,6 +93,16 @@ public class Mc extends Actor
         }  
     } 
     
+    public void jump3()  
+    {  
+        if (Greenfoot.isKeyDown("up") && onPlatform3())
+
+        {  
+            vSpeed = jumpStrength;  
+            fall();  
+        }  
+    } 
+    
     public void fall()  
     {  
         setLocation(getX(), getY()+vSpeed);  
@@ -109,10 +120,16 @@ public class Mc extends Actor
         Actor under = getOneObjectAtOffset (0, getImage().getHeight()/2, Lvl2Pf.class);  
         return under != null;  
     }  
+    
+    public boolean onPlatform3()  
+    {  
+        Actor under = getOneObjectAtOffset (0, getImage().getHeight()/2, Lvl3Pf.class);  
+        return under != null;  
+    }  
 
     public void checkFall()  
     {  
-       if (onPlatform() || onPlatform2())  
+       if (onPlatform() || onPlatform2() || onPlatform3())  
         {  
             vSpeed = 0;  
         }  
