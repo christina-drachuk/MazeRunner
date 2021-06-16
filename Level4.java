@@ -19,7 +19,7 @@ public class Level4 extends GeneralWorld
         addObject(getMc(),30,690);
         prepare();
         backgroundMusicFour.playLoop();
-        backgroundMusicFour.setVolume(40);
+        backgroundMusicFour.setVolume(30);
     }
 
     public void act()
@@ -29,6 +29,7 @@ public class Level4 extends GeneralWorld
             backgroundMusicFour.stop();
         }
     }
+    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
@@ -77,5 +78,13 @@ public class Level4 extends GeneralWorld
         addObject(boss,1396,466);
         boss.setLocation(1411,458);
         boss.setLocation(1411,479);
+        shield shield3 = new shield();
+        addObject(shield3,40,700);
+        shield shield4 = new shield();
+        addObject(shield4,15,697);
+        shield shield5 = new shield();
+        addObject(shield5,488,708);
+        shield shield6 = new shield();
+        addObject(shield6,1029,703);
     }
 }

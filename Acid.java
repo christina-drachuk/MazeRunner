@@ -1,22 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class fireball here.
+ * Write a description of class Acid here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class fireball extends Actor
+public class Acid extends Actor
 {
-    int direction = Greenfoot.getRandomNumber(15)+5;
-    int speed = Greenfoot.getRandomNumber(50)-15;
     /**
-     * Act - do whatever the fireball wants to do. This method is called whenever
+     * Act - do whatever the Acid wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
     {
-        setLocation(getX()-direction, (getY()+speed));
+        setLocation(getX(), (getY()+10));
         rightScreen();// Add your action code here.
     } 
     

@@ -16,6 +16,7 @@ public class Level2 extends GeneralWorld
     GreenfootSound backgroundMusicTwo = new GreenfootSound("bensound-dance.mp3");
     public Level2()
     {
+        
         prepare();
         backgroundMusicTwo.playLoop();
         backgroundMusicTwo.setVolume(30);
@@ -26,6 +27,7 @@ public class Level2 extends GeneralWorld
 
     public void act()
     {
+        showCoins(); 
         if (getMc().getX() >= getWidth()) {
             backgroundMusicTwo.pause();
             Greenfoot.setWorld(new Level3());}

@@ -28,7 +28,7 @@ public class MyWorld extends GeneralWorld
     
     public void act()
     {
-        
+        showCoins(); 
         if (getMc().getX() >= getWidth()) {
             backgroundMusicOne.pause();
             Greenfoot.setWorld(new Level2());}

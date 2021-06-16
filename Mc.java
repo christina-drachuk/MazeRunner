@@ -39,11 +39,13 @@ public class Mc extends Actor
         jump3();
         jump4(); 
         lasergun();
+        coin();
         delay++;
         reTime2++; 
         shield(); 
         life();
-        die(); 
+        die();
+        bossDie();
     }  
     
     public void life()
@@ -290,6 +292,23 @@ public class Mc extends Actor
     public void die(){
         if(isTouching(Enemy.class) || (isTouching(Lvl2Emy.class)) || (isTouching(Lvl3Emy.class))){
             setLocation(35, 666);
+            ((GeneralWorld)getWorld()).lostLife();;
+        }
+    }
+    
+    public void coin(){
+        if (isTouching(coin.class)){
+            removeTouching(coin.class);
+            Greenfoot.playSound("up.wav");
+            ((GeneralWorld)getWorld()).addCoins(1);
+        }
+    }
+    
+    public void bossDie(){
+        if(isTouching(fireball.class) || isTouching(Acid.class) || isTouching(Boss.class)){
+            removeTouching(fireball.class);
+            removeTouching(Acid.class);
+            Greenfoot.playSound("LossOfLife.wav");
             ((GeneralWorld)getWorld()).lostLife();;
         }
     }

@@ -24,6 +24,7 @@ public class Level3 extends GeneralWorld
     
     public void act()
     {
+        showCoins(); 
         if (getMc().getX() >= getWidth()) {
             backgroundMusicThree.stop();
             Greenfoot.setWorld(new Level4());}

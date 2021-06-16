@@ -11,6 +11,7 @@ public class GeneralWorld extends World
     private Mc mc;
     //MyWorld myWorld = getWorld();
     public static int lives;
+    public static int coins;
     /**
      * Constructor for objects of class GeneralWorld.
      * 
@@ -21,6 +22,8 @@ public class GeneralWorld extends World
         super(1700, 800, 1, false);
         this.mc = new Mc();
         lives = 3;
+        coins = 0;
+        showCoins();
     }
     
     public Mc getMc()
@@ -55,5 +58,13 @@ public class GeneralWorld extends World
             Heart heart = new Heart();
             addObject(heart, 20 + 25 * i, 20);
         }
+    }
+    
+    public void addCoins(int score){
+        coins += score;
+    }
+    
+    public void showCoins(){
+        showText("Score: " + coins, 50, 70);
     }
 }

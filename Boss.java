@@ -10,14 +10,15 @@ public class Boss extends Actor
 {
     private GreenfootImage BossImg1 = new GreenfootImage("boss1.png");
     private GreenfootImage BossImg2 = new GreenfootImage("Boss2.png");
-    
     private GreenfootImage BossBad = new GreenfootImage("Boss3.png");
+    GreenfootSound backgroundMusicFour = new GreenfootSound("BOSS FIGHT.mp3");
     private int frame = 2;
     private int direction = 1;
     private int moveX = 1;
     private int moveNegX = 1; 
     private boolean side = false; 
     private int health = 200;
+    private int mainATime = 1; 
     
     public void act()
     {
@@ -26,7 +27,31 @@ public class Boss extends Actor
         moveX += moveNegX;
         mainAttack();
         secondAttack();
+        healthLoss();
+        die();
     }
+    
+    public void healthLoss(){
+        if(isTouching(projectile.class)){
+            health -= 5;
+            removeTouching(projectile.class);
+        }
+        
+        if(isTouching(megaLaser.class)){
+            health -= 20;
+            removeTouching(megaLaser.class);
+        }
+        
+        if (health < 100){
+            
+            mainATime = 4; 
+        }
+        
+        if (health == 100){
+           Greenfoot.playSound("bossHurt.wav");
+        }
+    }
+    
     public void changePicRight()
     {
         if (frame == 8)
@@ -70,19 +95,37 @@ public class Boss extends Actor
     }
     
     public void mainAttack(){
-        if (Greenfoot.getRandomNumber(100) < 2){
-            getWorld().addObject(new fireball(), getX(), getY()-100);
-            getWorld().addObject(new fireball(), getX(), getY()-100);
-            getWorld().addObject(new fireball(), getX(), getY()-100);
+        if (Greenfoot.getRandomNumber(100) <= mainATime){
             getWorld().addObject(new fireball(), getX(), getY()-100);
             getWorld().addObject(new fireball(), getX(), getY()-100);
         }
     }
     
     public void secondAttack(){
-        if (Greenfoot.getRandomNumber(500) < 2){
-            getWorld().addObject(new fireball(), getX(), getY()-100);
+        if (Greenfoot.getRandomNumber(500) < mainATime){
+            
+            setImage(BossBad);
+            getWorld().addObject(new Acid(), Greenfoot.getRandomNumber(1100), 5);
+            getWorld().addObject(new Acid(), Greenfoot.getRandomNumber(1100), 5);
+            getWorld().addObject(new Acid(), Greenfoot.getRandomNumber(1100), 5);
+            getWorld().addObject(new Acid(), Greenfoot.getRandomNumber(1100), 5);
+            getWorld().addObject(new Acid(), Greenfoot.getRandomNumber(1100), 5);
+            getWorld().addObject(new Acid(), Greenfoot.getRandomNumber(1100), 5);
+            getWorld().addObject(new Acid(), Greenfoot.getRandomNumber(1100), 5);
+            getWorld().addObject(new Acid(), Greenfoot.getRandomNumber(1100), 5);
+            getWorld().addObject(new Acid(), Greenfoot.getRandomNumber(1100), 5);
+            getWorld().addObject(new Acid(), Greenfoot.getRandomNumber(1100), 5);
+            getWorld().addObject(new Acid(), Greenfoot.getRandomNumber(1100), 5);
+            setImage(BossBad);
         }
     }
     
+    public void die(){
+        if(health <= 0){
+           backgroundMusicFour.stop();
+           Greenfoot.playSound("bossDead.wav");
+           getWorld().removeObject(this);
+        }
+    
+    }
 }
