@@ -91,5 +91,31 @@ public class Level4 extends GeneralWorld
         addObject(shield5,488,708);
         shield shield6 = new shield();
         addObject(shield6,1029,703);
+        coin coin = new coin();
+        addObject(coin,109,632);
+        coin coin2 = new coin();
+        addObject(coin2,187,544);
+        coin coin3 = new coin();
+        addObject(coin3,265,470);
+        coin coin4 = new coin();
+        addObject(coin4,375,391);
+        coin coin5 = new coin();
+        addObject(coin5,498,320);
+        laser4.setLocation(501,446);
+        coin coin6 = new coin();
+        addObject(coin6,501,446);
+        coin coin7 = new coin();
+        addObject(coin7,642,700);
+        coin coin8 = new coin();
+        addObject(coin8,859,698);
+        boss.setLocation(1180,692);
+        coin coin9 = new coin();
+        addObject(coin9,1180,692);
+        boss.setLocation(1420,699);
+        coin coin10 = new coin();
+        addObject(coin10,1420,699);
+        boss.setLocation(1611,699);
+        coin coin11 = new coin();
+        addObject(coin11,1611,699);
     }
 }
