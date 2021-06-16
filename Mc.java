@@ -16,6 +16,8 @@ public class Mc extends Actor
     private boolean hasGun = false;
     private int face = 1;
     private int reloadTime = 55;
+    private int reTime2 = 0; 
+    private boolean hasBigLaser = false; 
     
     private GreenfootImage img1 = new GreenfootImage("MC1.png");
     private GreenfootImage img2 = new GreenfootImage("MC2.png");
@@ -36,7 +38,8 @@ public class Mc extends Actor
         jump2();
         jump3();
         lasergun();
-        delay++; 
+        delay++;
+        reTime2++; 
         shield(); 
         life();
         die(); 
@@ -207,8 +210,27 @@ public class Mc extends Actor
             Greenfoot.playSound("up.wav");
         }
         
+        if (isTouching(laser3.class)){
+            hasGun = true;
+            hasBigLaser = true; 
+            reloadTime = 25;
+            removeTouching(laser3.class);
+            Greenfoot.playSound("up.wav");
+        }
+        
+        if (isTouching(laser4.class)){
+            hasGun = true;
+            reloadTime = 15;
+            removeTouching(laser4.class);
+            Greenfoot.playSound("up.wav");
+        }
+        
         if (hasGun){
             shoot(); 
+        }
+        
+        if (hasBigLaser){
+            shoot2(); 
         }
     }
     
@@ -225,6 +247,17 @@ public class Mc extends Actor
                     getWorld().addObject(new projectileL(), getX(), getY());
                     delay = 0; 
                 }
+            }
+        }
+    }
+    
+    public void shoot2(){
+        if( Greenfoot.isKeyDown("g"))
+        {
+            if (reTime2 >= 400){
+                Greenfoot.playSound("Shots.mp3");
+                    getWorld().addObject(new megaLaser(), getX(), getY());
+                    reTime2 = 0; 
             }
         }
     }

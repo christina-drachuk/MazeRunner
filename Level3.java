@@ -19,6 +19,12 @@ public class Level3 extends GeneralWorld
         prepare();
         addObject(getMc(),13,695);
     }
+    
+    public void act()
+    {
+        if (getMc().getX() >= getWidth()) {
+            Greenfoot.setWorld(new Level4());}
+    }
 
     /**
      * Prepare the world for the start of the program.
@@ -201,5 +207,15 @@ public class Level3 extends GeneralWorld
         shield.setLocation(45,53);
         lvl3Emy10.setLocation(272,132);
         lvl3Emy7.setLocation(1420,119);
+        laser3 laser3 = new laser3();
+        addObject(laser3,69,284);
+        lvl3Emy11.setLocation(110,60);
+        laser4 laser4 = new laser4();
+        addObject(laser4,110,60);
+        lvl3Emy12.setLocation(79,247);
+        lvl3Emy4.setLocation(1036,524);
+        lvl3Emy9.setLocation(1005,176);
+        Lvl3Emy lvl3Emy15 = new Lvl3Emy();
+        addObject(lvl3Emy15,1573,488);
     }
 }
