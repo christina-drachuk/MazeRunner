@@ -13,6 +13,7 @@ public class Level3 extends GeneralWorld
      * Constructor for objects of class Level3.
      * 
      */
+    GreenfootSound backgroundMusicTwo = new GreenfootSound("bensound-dance.mp3");
     public Level3()
     {
         prepare();
