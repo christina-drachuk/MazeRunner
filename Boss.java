@@ -17,12 +17,15 @@ public class Boss extends Actor
     private int moveX = 1;
     private int moveNegX = 1; 
     private boolean side = false; 
+    private int health = 200;
     
     public void act()
     {
         movement();
         changePic();
         moveX += moveNegX;
+        mainAttack();
+        secondAttack();
     }
     public void changePicRight()
     {
@@ -64,6 +67,22 @@ public class Boss extends Actor
            moveNegX *= -1; 
         }
         
+    }
+    
+    public void mainAttack(){
+        if (Greenfoot.getRandomNumber(100) < 2){
+            getWorld().addObject(new fireball(), getX(), getY()-100);
+            getWorld().addObject(new fireball(), getX(), getY()-100);
+            getWorld().addObject(new fireball(), getX(), getY()-100);
+            getWorld().addObject(new fireball(), getX(), getY()-100);
+            getWorld().addObject(new fireball(), getX(), getY()-100);
+        }
+    }
+    
+    public void secondAttack(){
+        if (Greenfoot.getRandomNumber(500) < 2){
+            getWorld().addObject(new fireball(), getX(), getY()-100);
+        }
     }
     
 }
