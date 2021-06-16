@@ -39,6 +39,7 @@ public class Level3 extends GeneralWorld
      */
     private void prepare()
     {
+        getBackground().drawImage(new GreenfootImage("G", 45, Color.RED, null), 120, 260);
         Lvl3Pf lvl3Pf = new Lvl3Pf();
         addObject(lvl3Pf,24,735);
         Lvl3Pf lvl3Pf2 = new Lvl3Pf();

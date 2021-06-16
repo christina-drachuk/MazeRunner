@@ -40,6 +40,10 @@ public class MyWorld extends GeneralWorld
      */
     private void prepare()
     {
+        getBackground().drawImage(new GreenfootImage("Use arrow keys to move", 45, null, null), 490, 610);
+        getBackground().drawImage(new GreenfootImage("Throughout this game, items will boost your reload speed and give you special powers", 45, Color.YELLOW, null), 100, 70);
+        getBackground().drawImage(new GreenfootImage("Press f to shoot ->", 20, null, null), 250, 575);
+        getBackground().drawImage(new GreenfootImage("Shields give an extra heart->", 20, null, null), 840, 500);
         Platform platform = new Platform();
         addObject(platform,259,645);
         Platform platform2 = new Platform();
