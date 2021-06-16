@@ -12,6 +12,7 @@ public class projectile extends Actor
      * Act - do whatever the projectile wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    
     public void act() 
     {
         setLocation(getX()+15, (getY()));

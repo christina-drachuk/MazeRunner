@@ -182,13 +182,28 @@ dependency8.type=UsesDependency
 dependency9.from=Level4
 dependency9.to=shield
 dependency9.type=UsesDependency
+<<<<<<< HEAD
+editor.fx.0.height=737
+editor.fx.0.width=814
+editor.fx.0.x=360
+editor.fx.0.y=28
+height=838
+package.numDependencies=51
+package.numTargets=23
+=======
 editor.fx.0.height=739
 editor.fx.0.width=853
 editor.fx.0.x=989
 editor.fx.0.y=139
 height=1022
+<<<<<<< HEAD
 package.numDependencies=53
 package.numTargets=26
+=======
+package.numDependencies=51
+package.numTargets=24
+>>>>>>> f5ae8d790c97ef89cce7f8875c7b4083a40aafc1
+>>>>>>> b737ef03d6d8c184587ed3d3c2fabfd22eb26d7b
 project.charset=windows-1252
 publish.hasSource=false
 publish.locked=true
@@ -240,14 +255,30 @@ target13.width=80
 target13.x=0
 target13.y=0
 target14.height=50
+<<<<<<< HEAD
 target14.name=laser2
+=======
+<<<<<<< HEAD
+target14.name=laser
+=======
+target14.name=Lvl3Emy
+>>>>>>> f5ae8d790c97ef89cce7f8875c7b4083a40aafc1
+>>>>>>> b737ef03d6d8c184587ed3d3c2fabfd22eb26d7b
 target14.showInterface=false
 target14.type=ClassTarget
 target14.width=80
 target14.x=0
 target14.y=0
 target15.height=50
+<<<<<<< HEAD
 target15.name=Lvl3Emy
+=======
+<<<<<<< HEAD
+target15.name=Mc
+=======
+target15.name=Level4
+>>>>>>> f5ae8d790c97ef89cce7f8875c7b4083a40aafc1
+>>>>>>> b737ef03d6d8c184587ed3d3c2fabfd22eb26d7b
 target15.showInterface=false
 target15.type=ClassTarget
 target15.width=80
@@ -387,7 +418,12 @@ target9.width=80
 target9.x=0
 target9.y=0
 version=3.0.0
+<<<<<<< HEAD
+width=1550
+world.lastInstantiated=MyWorld
+=======
 width=1940
 world.lastInstantiated=Level4
+>>>>>>> f5ae8d790c97ef89cce7f8875c7b4083a40aafc1
 xPosition=0
 yPosition=34
