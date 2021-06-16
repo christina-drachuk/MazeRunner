@@ -316,7 +316,7 @@ public class Mc extends Actor
     public void coin(){
         if (isTouching(coin.class)){
             removeTouching(coin.class);
-            Greenfoot.playSound("up.wav");
+            Greenfoot.playSound("badoink.wav");
             ((GeneralWorld)getWorld()).addCoins(1);
         }
     }

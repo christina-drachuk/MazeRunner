@@ -122,5 +122,7 @@ public class Level4 extends GeneralWorld
         boss.setLocation(1611,699);
         coin coin11 = new coin();
         addObject(coin11,1611,699);
+        boss.setLocation(1438,389);
+        boss.setLocation(1386,477);
     }
 }

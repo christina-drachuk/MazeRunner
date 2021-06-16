@@ -18,6 +18,6 @@ public class Level6 extends GeneralWorld
         showText("Congratulations...you made it!", 800, 450);
         
         backgroundMusicSix.playLoop();
-        backgroundMusicSix.setVolume(30);
+        backgroundMusicSix.setVolume(50);
     }
 }

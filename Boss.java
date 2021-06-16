@@ -15,7 +15,7 @@ public class Boss extends Actor
     private int direction = 1;
     private int moveX = 1;
     private int moveNegX = 1; 
-    private boolean side = false; 
+    private boolean side = false;
     public static int health = 200;
     private int mainATime = 1; 
     

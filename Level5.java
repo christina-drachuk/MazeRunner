@@ -17,7 +17,7 @@ public class Level5 extends GeneralWorld
     {
         addObject(getMc(),30,690);
         backgroundMusicFive.playLoop();
-        backgroundMusicFive.setVolume(30);
+        backgroundMusicFive.setVolume(40);
         prepare();
     }
     
@@ -59,5 +59,7 @@ public class Level5 extends GeneralWorld
         addObject(w5Platform11,1512,334);
         W5Platform w5Platform12 = new W5Platform();
         addObject(w5Platform12,1623,295);
+        coin coin = new coin();
+        addObject(coin,1666,218);
     }
 }
