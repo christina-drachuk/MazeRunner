@@ -11,13 +11,12 @@ public class Boss extends Actor
     private GreenfootImage BossImg1 = new GreenfootImage("boss1.png");
     private GreenfootImage BossImg2 = new GreenfootImage("Boss2.png");
     private GreenfootImage BossBad = new GreenfootImage("Boss3.png");
-    GreenfootSound backgroundMusicFour = new GreenfootSound("BOSS FIGHT.mp3");
     private int frame = 2;
     private int direction = 1;
     private int moveX = 1;
     private int moveNegX = 1; 
     private boolean side = false; 
-    private int health = 200;
+    public static int health = 200;
     private int mainATime = 1; 
     
     public void act()
@@ -122,7 +121,6 @@ public class Boss extends Actor
     
     public void die(){
         if(health <= 0){
-           backgroundMusicFour.stop();
            Greenfoot.playSound("bossDead.wav");
            getWorld().removeObject(this);
         }

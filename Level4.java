@@ -20,6 +20,7 @@ public class Level4 extends GeneralWorld
         prepare();
         backgroundMusicFour.playLoop();
         backgroundMusicFour.setVolume(30);
+        
     }
 
     public void act()
@@ -27,6 +28,10 @@ public class Level4 extends GeneralWorld
         if (lives == 0)
         {
             backgroundMusicFour.stop();
+        }
+        
+        if(Boss.health <= 0){
+           backgroundMusicFour.stop(); 
         }
     }
     
