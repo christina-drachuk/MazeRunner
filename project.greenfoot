@@ -35,8 +35,31 @@ dependency12.type=UsesDependency
 dependency13.from=Level2
 dependency13.to=laser
 dependency13.type=UsesDependency
+<<<<<<< HEAD
 dependency14.from=Level2
 dependency14.to=shield
+=======
+dependency14.from=Level3
+<<<<<<< HEAD
+dependency14.to=Lvl3Emy
+dependency14.type=UsesDependency
+dependency15.from=MyWorld
+dependency15.to=Level2
+dependency15.type=UsesDependency
+dependency16.from=MyWorld
+dependency16.to=Platform
+dependency16.type=UsesDependency
+dependency17.from=MyWorld
+dependency17.to=shield
+dependency17.type=UsesDependency
+dependency18.from=MyWorld
+dependency18.to=laser
+dependency18.type=UsesDependency
+dependency19.from=MyWorld
+dependency19.to=Enemy
+=======
+dependency14.to=laser
+>>>>>>> 72b7a8c810b3e2c7cdd22a8aa72ca5b0a28ed7b7
 dependency14.type=UsesDependency
 dependency15.from=Level2
 dependency15.to=laser2
@@ -50,14 +73,56 @@ dependency17.type=UsesDependency
 dependency18.from=Level3
 dependency18.to=shield
 dependency18.type=UsesDependency
+<<<<<<< HEAD
 dependency19.from=Level3
 dependency19.to=laser2
+=======
+dependency19.from=MyWorld
+dependency19.to=Platform
+>>>>>>> 012a44a36895249d7e15066bbf7c71370b727979
+>>>>>>> 72b7a8c810b3e2c7cdd22a8aa72ca5b0a28ed7b7
 dependency19.type=UsesDependency
 dependency2.from=GeneralWorld
 dependency2.to=Heart
 dependency2.type=UsesDependency
+<<<<<<< HEAD
 dependency20.from=Level3
 dependency20.to=laser
+=======
+<<<<<<< HEAD
+dependency20.from=Mc
+dependency20.to=GeneralWorld
+dependency20.type=UsesDependency
+dependency21.from=Mc
+dependency21.to=projectile
+dependency21.type=UsesDependency
+dependency22.from=Mc
+dependency22.to=projectileL
+dependency22.type=UsesDependency
+dependency23.from=Mc
+dependency23.to=Platform
+dependency23.type=UsesDependency
+dependency24.from=Mc
+dependency24.to=Lvl2Pf
+dependency24.type=UsesDependency
+dependency25.from=Mc
+dependency25.to=Lvl3Pf
+dependency25.type=UsesDependency
+dependency26.from=Mc
+dependency26.to=laser
+dependency26.type=UsesDependency
+dependency27.from=Mc
+dependency27.to=laser2
+dependency27.type=UsesDependency
+dependency28.from=Mc
+dependency28.to=shield
+dependency28.type=UsesDependency
+dependency29.from=Mc
+dependency29.to=Enemy
+=======
+dependency20.from=MyWorld
+dependency20.to=shield
+>>>>>>> 72b7a8c810b3e2c7cdd22a8aa72ca5b0a28ed7b7
 dependency20.type=UsesDependency
 dependency21.from=Level3
 dependency21.to=Lvl3Emy
@@ -84,13 +149,44 @@ dependency28.from=MyWorld
 dependency28.to=Enemy
 dependency28.type=UsesDependency
 dependency29.from=Mc
+<<<<<<< HEAD
 dependency29.to=GeneralWorld
+=======
+dependency29.to=Lvl3Pf
+>>>>>>> 012a44a36895249d7e15066bbf7c71370b727979
+>>>>>>> 72b7a8c810b3e2c7cdd22a8aa72ca5b0a28ed7b7
 dependency29.type=UsesDependency
 dependency3.from=Level4
 dependency3.to=Lvl4Pf
 dependency3.type=UsesDependency
 dependency30.from=Mc
+<<<<<<< HEAD
 dependency30.to=projectile
+=======
+<<<<<<< HEAD
+dependency30.to=Lvl2Emy
+dependency30.type=UsesDependency
+dependency31.from=Mc
+dependency31.to=Lvl3Emy
+dependency31.type=UsesDependency
+dependency32.from=Enemy
+dependency32.to=projectile
+dependency32.type=UsesDependency
+dependency33.from=Lvl2Emy
+dependency33.to=projectile
+dependency33.type=UsesDependency
+dependency34.from=Lvl2Emy
+dependency34.to=projectileL
+dependency34.type=UsesDependency
+dependency35.from=Lvl3Emy
+dependency35.to=projectile
+dependency35.type=UsesDependency
+dependency36.from=Lvl3Emy
+dependency36.to=projectileL
+dependency36.type=UsesDependency
+=======
+dependency30.to=laser
+>>>>>>> 72b7a8c810b3e2c7cdd22a8aa72ca5b0a28ed7b7
 dependency30.type=UsesDependency
 dependency31.from=Mc
 dependency31.to=projectileL
@@ -119,8 +215,14 @@ dependency38.type=UsesDependency
 dependency39.from=Mc
 dependency39.to=laser3
 dependency39.type=UsesDependency
+<<<<<<< HEAD
 dependency4.from=Level4
 dependency4.to=shield
+=======
+>>>>>>> 012a44a36895249d7e15066bbf7c71370b727979
+dependency4.from=Level2
+dependency4.to=Level3
+>>>>>>> 72b7a8c810b3e2c7cdd22a8aa72ca5b0a28ed7b7
 dependency4.type=UsesDependency
 dependency40.from=Mc
 dependency40.to=laser4
@@ -170,13 +272,28 @@ dependency8.type=UsesDependency
 dependency9.from=Level2
 dependency9.to=Mc
 dependency9.type=UsesDependency
+<<<<<<< HEAD
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
+height=838
+package.numDependencies=36
+package.numTargets=17
+=======
 editor.fx.0.height=739
 editor.fx.0.width=816
 editor.fx.0.x=359
 editor.fx.0.y=74
 height=985
+<<<<<<< HEAD
 package.numDependencies=50
 package.numTargets=23
+=======
+package.numDependencies=43
+package.numTargets=22
+>>>>>>> 012a44a36895249d7e15066bbf7c71370b727979
+>>>>>>> 72b7a8c810b3e2c7cdd22a8aa72ca5b0a28ed7b7
 project.charset=windows-1252
 publish.hasSource=false
 publish.locked=true
@@ -191,7 +308,7 @@ readme.width=47
 readme.x=10
 readme.y=10
 shm.size=60000000
-simulation.speed=45
+simulation.speed=48
 target1.height=50
 target1.name=Heart
 target1.showInterface=false
@@ -228,14 +345,30 @@ target13.width=100
 target13.x=0
 target13.y=0
 target14.height=50
+<<<<<<< HEAD
 target14.name=laser
+=======
+<<<<<<< HEAD
+target14.name=Lvl2Emy
+=======
+target14.name=Mc
+>>>>>>> 012a44a36895249d7e15066bbf7c71370b727979
+>>>>>>> 72b7a8c810b3e2c7cdd22a8aa72ca5b0a28ed7b7
 target14.showInterface=false
 target14.type=ClassTarget
 target14.width=80
 target14.x=0
 target14.y=0
 target15.height=50
+<<<<<<< HEAD
 target15.name=Mc
+=======
+<<<<<<< HEAD
+target15.name=MyWorld
+=======
+target15.name=Enemy
+>>>>>>> 012a44a36895249d7e15066bbf7c71370b727979
+>>>>>>> 72b7a8c810b3e2c7cdd22a8aa72ca5b0a28ed7b7
 target15.showInterface=false
 target15.type=ClassTarget
 target15.width=80
@@ -319,14 +452,18 @@ target4.width=80
 target4.x=0
 target4.y=0
 target5.height=50
+<<<<<<< HEAD
+target5.name=Lvl2Pf
+=======
 target5.name=Level4
+>>>>>>> 012a44a36895249d7e15066bbf7c71370b727979
 target5.showInterface=false
 target5.type=ClassTarget
 target5.width=80
 target5.x=0
 target5.y=0
 target6.height=50
-target6.name=Lvl2Pf
+target6.name=projectileL
 target6.showInterface=false
 target6.type=ClassTarget
 target6.width=80
@@ -354,7 +491,14 @@ target9.width=80
 target9.x=0
 target9.y=0
 version=3.0.0
+<<<<<<< HEAD
+width=1550
+world.lastInstantiated=Level3
+xPosition=0
+yPosition=0
+=======
 width=1940
 world.lastInstantiated=Level4
 xPosition=0
 yPosition=24
+>>>>>>> 012a44a36895249d7e15066bbf7c71370b727979
