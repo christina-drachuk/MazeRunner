@@ -18,6 +18,12 @@ public class Level3 extends GeneralWorld
         prepare();
         addObject(getMc(),13,695);
     }
+    
+    public void act()
+    {
+        if (getMc().getX() >= getWidth()) {
+            Greenfoot.setWorld(new Level4());}
+    }
 
     /**
      * Prepare the world for the start of the program.
