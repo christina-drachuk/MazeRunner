@@ -17,8 +17,15 @@ public class Level5 extends GeneralWorld
     {
         addObject(getMc(),30,690);
         backgroundMusicFive.playLoop();
-        backgroundMusicFive.setVolume(0);
+        backgroundMusicFive.setVolume(30);
         prepare();
+    }
+    
+    public void act()
+    {
+       if (getMc().getX() >= getWidth()) {
+            backgroundMusicFive.stop();
+            Greenfoot.setWorld(new Level6());} 
     }
 
     /**

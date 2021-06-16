@@ -19,7 +19,7 @@ public class Level4 extends GeneralWorld
         addObject(getMc(),30,690);
         prepare();
         backgroundMusicFour.playLoop();
-        backgroundMusicFour.setVolume(0);
+        backgroundMusicFour.setVolume(30);
         
     }
 
@@ -37,7 +37,7 @@ public class Level4 extends GeneralWorld
         
         if (getMc().getX() >= getWidth()) {
             backgroundMusicFour.stop();
-            Greenfoot.setWorld(new Level4());}
+            Greenfoot.setWorld(new Level5());}
     }
     
     /**
