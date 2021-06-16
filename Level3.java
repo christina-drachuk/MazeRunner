@@ -17,7 +17,7 @@ public class Level3 extends GeneralWorld
     public Level3()
     {
         backgroundMusicThree.playLoop();
-        backgroundMusicThree.setVolume(50);
+        backgroundMusicThree.setVolume(0);
         prepare();
         addObject(getMc(),13,695);
     }
