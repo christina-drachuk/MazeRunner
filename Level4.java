@@ -13,12 +13,22 @@ public class Level4 extends GeneralWorld
      * Constructor for objects of class Level4.
      * 
      */
+    GreenfootSound backgroundMusicFour = new GreenfootSound("BOSS FIGHT.mp3");
     public Level4()
     {
         addObject(getMc(),13,695);
         prepare();
+        backgroundMusicFour.playLoop();
+        backgroundMusicFour.setVolume(40);
     }
 
+    public void act()
+    {
+        if (lives == 0)
+        {
+            backgroundMusicFour.stop();
+        }
+    }
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.

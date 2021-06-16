@@ -13,9 +13,11 @@ public class Level3 extends GeneralWorld
      * Constructor for objects of class Level3.
      * 
      */
-    GreenfootSound backgroundMusicTwo = new GreenfootSound("bensound-dance.mp3");
+    GreenfootSound backgroundMusicThree = new GreenfootSound("level3.mp3");
     public Level3()
     {
+        backgroundMusicThree.playLoop();
+        backgroundMusicThree.setVolume(50);
         prepare();
         addObject(getMc(),13,695);
     }
@@ -23,7 +25,12 @@ public class Level3 extends GeneralWorld
     public void act()
     {
         if (getMc().getX() >= getWidth()) {
+            backgroundMusicThree.stop();
             Greenfoot.setWorld(new Level4());}
+        if (lives == 0)
+        {
+            backgroundMusicThree.stop();
+        }    
     }
 
     /**

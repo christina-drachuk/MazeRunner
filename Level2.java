@@ -29,6 +29,10 @@ public class Level2 extends GeneralWorld
         if (getMc().getX() >= getWidth()) {
             backgroundMusicTwo.pause();
             Greenfoot.setWorld(new Level3());}
+         if (lives == 0)
+        {
+            backgroundMusicTwo.stop();
+        }
     }
 
     /**
