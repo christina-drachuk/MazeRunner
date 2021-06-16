@@ -108,6 +108,18 @@ public class MyWorld extends GeneralWorld
         addObject(platform6,692,573);
         Enemy enemy = new Enemy();
         addObject(enemy,733,511);
+        coin coin = new coin();
+        addObject(coin,124,687);
+        coin coin2 = new coin();
+        addObject(coin2,555,510);
+        coin coin3 = new coin();
+        addObject(coin3,783,509);
+        coin coin4 = new coin();
+        addObject(coin4,945,575);
+        coin coin5 = new coin();
+        addObject(coin5,1506,392);
+        coin coin6 = new coin();
+        addObject(coin6,1639,299);
     }
     
 }

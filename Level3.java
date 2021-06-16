@@ -226,5 +226,23 @@ public class Level3 extends GeneralWorld
         lvl3Emy9.setLocation(1005,176);
         Lvl3Emy lvl3Emy15 = new Lvl3Emy();
         addObject(lvl3Emy15,1573,488);
+        coin coin = new coin();
+        addObject(coin,359,591);
+        coin coin2 = new coin();
+        addObject(coin2,569,228);
+        coin coin3 = new coin();
+        addObject(coin3,907,617);
+        coin coin4 = new coin();
+        addObject(coin4,1296,601);
+        coin coin5 = new coin();
+        addObject(coin5,1165,197);
+        coin coin6 = new coin();
+        addObject(coin6,181,62);
+        coin coin7 = new coin();
+        addObject(coin7,21,332);
+        coin coin8 = new coin();
+        addObject(coin8,1609,510);
+        coin coin9 = new coin();
+        addObject(coin9,1625,118);
     }
 }

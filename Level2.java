@@ -146,5 +146,19 @@ public class Level2 extends GeneralWorld
         removeObject(shield2);
         shield shield4 = new shield();
         addObject(shield4,28,698);
+        coin coin = new coin();
+        addObject(coin,207,640);
+        coin coin2 = new coin();
+        addObject(coin2,508,603);
+        coin coin3 = new coin();
+        addObject(coin3,608,399);
+        coin coin4 = new coin();
+        addObject(coin4,176,387);
+        coin coin5 = new coin();
+        addObject(coin5,910,496);
+        coin coin6 = new coin();
+        addObject(coin6,1535,418);
+        coin coin7 = new coin();
+        addObject(coin7,1677,325);
     }
 }
